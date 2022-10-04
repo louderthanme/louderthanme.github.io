@@ -1,0 +1,20 @@
+<%- include('partials/head')  %>
+<%- include('partials/navbar')  %>
+
+<div class="card poem" style="width: 30rem;">
+    <h5 class="poem title"><%= poemTitle %></h5>
+    <div class="card-body">
+        <h6 class="card-subtitle mb-2 text-muted">by <span id="poetname"><%= poetName %></span></h6>
+
+        <% for (let i = 0; i < poemLines.length; i++){ %>
+        <% if(!poemLines[i]) {%>
+        <p class="line">&nbsp;</p>
+        <% } else { %>
+        <p class="line"><%= poemLines[i] %></p>
+        <% } %>
+        <% } %>
+        <br>
+        <p>Check out <%=poetName  %>'s other poem: <a href="/<%= poet %>/<%=otherPoemNumber%> "><%=otherPoem %> </a></p>
+        <p>Check out <a href="/randompoem">a random poem </a> </p>
+    </div>
+</div>

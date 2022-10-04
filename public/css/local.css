@@ -1,0 +1,63 @@
+body {
+    background: rgba(0, 0, 0, 0)
+}
+
+html {
+    min-height: 100%;
+    background: url(https://i.ibb.co/5Gf5sLB/2710fiunal.png) 50% no-repeat, linear-gradient(-45deg, rgba(90, 92, 125, 0.95), rgba(124, 68, 124, 0.95), rgba(156, 54, 186, 0.75), rgba(240, 163, 149, 0.5), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)) repeat 0% rgb(252, 84, 81);
+    background-size: contain, 450% auto;
+    animation: bgrad 14s infinite alternate linear;
+}
+
+@keyframes bgrad {
+    to {
+        background-position: center, right;
+    }
+}
+
+.line {
+    margin: 0;
+    padding: 0;
+}
+
+.poem {
+    margin: 4em;
+    padding: 0;
+}
+
+.poem.title {
+    margin: 1em;
+    margin-left: .8em;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+h1,
+h3 {
+    color: rgb(255, 255, 255)
+}
+
+a {
+    color: rgb(255, 0, 128);
+    text-decoration: none
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(9, 174, 138)
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+#poetname {
+    color: rgb(2, 131, 105)
+}
